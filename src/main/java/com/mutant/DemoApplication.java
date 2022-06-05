@@ -12,12 +12,12 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 	
-@RestController
-class HelloController{
-	@GetMapping("/")
-	String hello() {
-		return "Hello world";
+	@RestController
+	class HelloController{
+		@GetMapping("/")
+		String hello() {
+			return "Magneto MercadoLibre.";
+		}
 	}
-}
 
 }

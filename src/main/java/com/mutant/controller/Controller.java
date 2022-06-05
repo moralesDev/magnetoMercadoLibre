@@ -21,12 +21,6 @@ import com.mutant.service.StatsService;
 public class Controller {
 	@Autowired
 	StatsService service;
-
-	@RequestMapping("/")
-	@ResponseBody
-	public String welcome() {
-		return "Magneto MercadoLibre.";
-	}
 	
 	@PostMapping("/mutant")
 	public Response verificar(@RequestBody modelDNA dna) {
