@@ -6,7 +6,7 @@ Api Rest creado para detectar si tu ADN corresponde al de un Mutante o no.
 
 Ingresa a la URL https://magnetoprueba.herokuapp.com/swagger-ui/index.html para conocer acerca de los apis habilitadas.
 
-1. ## /service/mutant
+1. ## https://magnetoprueba.herokuapp.com/service/mutant
 
   Invoca el api rest cargando un body tipo raw como el siguiente ejemplo
   
@@ -27,6 +27,11 @@ Ingresa a la URL https://magnetoprueba.herokuapp.com/swagger-ui/index.html para 
   
   Notas : Solo se permiten las letras A C T G
   
-2.  ## /service/stats
+2.  ## https://magnetoprueba.herokuapp.com/service/stats
 
   Todos los datos son almacenas, este servicio te mostrara un contador de las pruebas, quienes fueron mutantes y quienes no.
+  
+  Ejemplo de respuesta:
+  
+  {“count_mutant_dna”:40, “count_human_dna”:100: “ratio”:0.4}
+
